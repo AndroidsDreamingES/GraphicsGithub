@@ -275,6 +275,8 @@ void Fan::TouchEventMove(float x, float y){
     lastMoveTime = currentTime;
     float velocity = dist /dtMs; // pixels per millisecond
     dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
+
+    LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
 }
 
 void Fan::TouchEventRelease(float x, float y){

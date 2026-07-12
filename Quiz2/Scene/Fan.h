@@ -22,7 +22,7 @@ float dragBoost = 0.0f; // extra speed while dragging, 0 otherwise
 
 static constexpr float kBaseSpeed = 1.5f; // deg/frame when ON
 static constexpr float kMaxBoost = 20.0f; // clamp for the drag boost
-static constexpr float kBoostScale = 8.0f; // px/ms -> deg/frame
+static constexpr float kBoostScale = 0.018f; // px/ms -> deg/frame
 static constexpr float kTapThreshold = 12.0f; // px: below this it's a tap
 
 float lastX, lastY; // previous touch position
