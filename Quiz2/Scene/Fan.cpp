@@ -164,7 +164,7 @@ void Fan::Render(){
 
     // base : push -> T(0, -2.6, 0) -> S(1.6, 0.25, 0.8) -> draw(brown) -> pop
     transform.TransformPushMatrix();
-    transform.TransformTranslate(0.f, -3.6f, 0.f);
+    transform.TransformTranslate(0.f, -2.6f, 0.f);
     transform.TransformScale(1.6f, 0.25f, 0.8f);
     glm::vec3 brown{0.45f, 0.28f, 0.12f};
     draw(brown);
@@ -196,6 +196,11 @@ void Fan::Render(){
         glm::vec3{1.0f, 0.65f, 0.f}, // orange
         glm::vec3{0.f, 0.f, 1.f} // green 
     };
+
+    if(fanOn) spinAngle += kBaseSpeed + dragBoost;
+    if(spinAngle >= 360.f){
+        spinAngle -= 360.0f;
+    }
 
     for(int i =0; i < 4; ++i){
         transform.TransformPushMatrix();
