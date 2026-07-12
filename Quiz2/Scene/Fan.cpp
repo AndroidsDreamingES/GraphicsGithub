@@ -163,7 +163,7 @@ void Fan::Render(){
 
     // base : push -> T(0, -2.6, 0) -> S(1.6, 0.25, 0.8) -> draw(brown) -> pop
     transform.TransformPushMatrix();
-    transform.TransformTranslate(0.f, -2.6f, 0.f);
+    transform.TransformTranslate(0.f, -3.6f, 0.f);
     transform.TransformScale(1.6f, 0.25f, 0.8f);
     glm::vec3 brown{0.45f, 0.28f, 0.12f};
     draw(brown);
@@ -179,7 +179,7 @@ void Fan::Render(){
     
     // hub : push -> T(0, 0.2, 0) -> S (0.3, 0.3, 0.3) -> draw(dark gray) -> pop
     transform.TransformPushMatrix();
-    transform.TransformTranslate(0.f, 0.2f, 0.f);
+    transform.TransformTranslate(0.f, 1.2f, 0.f);
     transform.TransformScale(0.3f, 0.3f, 0.3f); 
     glm::vec3 darkGray{0.2f, 0.2f, 0.22f};
     draw(darkGray);
@@ -205,7 +205,7 @@ void Fan::Render(){
 
     for(int i =0; i < 4; ++i){
         transform.TransformPushMatrix();
-        transform.TransformTranslate(0.f, 0.2f, 0.15f);
+        transform.TransformTranslate(0.f, 1.2f, 0.15f);
         transform.TransformRotate(glm::radians(spinAngle + i* 90.f), 0.f, 0.f, 1.f);
 
         transform.TransformTranslate(0.f, 0.55f, 0.f);
