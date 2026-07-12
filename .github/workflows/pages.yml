@@ -17,6 +17,7 @@ jobs:
   build-web:
     name: Build WebGL demos
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -38,6 +39,12 @@ jobs:
       #     sed 's/-s USE_WEBGL2=1 \\/-s USE_WEBGL2=1 \\\n    -s MIN_WEBGL_VERSION=2 \\/' build_web.sh | bash
       #     mkdir -p ../../site/Chapter2/2-OpenGLES3_Primitives-Modern
       #     cp -r web/. ../../site/Chapter2/2-OpenGLES3_Primitives-Modern/
+
+
+      - name: Build WebGL
+        run: |
+          sed 's/-s USE_WEBGL2=1 \\/-s USE_WEBGL2=1 \\\n    -s MIN_WEBGL_VERSION=2 \\/' build_web.sh | bash
+
 
       - name: Build Quiz2
         continue-on-error: true
