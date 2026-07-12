@@ -32,4 +32,3 @@ to view the website head over to
 Go to `Quiz2` folder and open a cmd
 then type `script_build_and_run.bat`
 The program will eventually load up and appear on your screen.
-
