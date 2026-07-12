@@ -41,6 +41,8 @@ std::chrono::steady_clock::time_point lastMoveTime;
     void Resize (int w, int h) override;
 
     void TouchEventDown(float x, float y) override;
+    void TouchEventMove(float x, float y) override;
+    void TouchEventRelease(float x, float y) override;
 
 private:
     void draw(glm::vec3 color);
