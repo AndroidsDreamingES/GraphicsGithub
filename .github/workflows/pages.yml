@@ -60,9 +60,9 @@ jobs:
             <h1>OpenGL ES 3.0 Modern</h1>
             <p>An interactive WebGL demo that runs directly in your browser. No installation needed.</p>
 
-            <h2>Assignment 1 - Triangle and Square</h2>
+            <h2>Quiz 2 - Spinning Fan</h2>
             <p>Rotating triangle and a yellow square</p>
-            <p><a href="Assignment1/">Launch the assignment</a></p>
+            <p><a href="Quiz2/">Launch the assignment</a></p>
           </body>
           </html>
           HTML
