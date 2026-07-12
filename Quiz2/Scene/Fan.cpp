@@ -213,6 +213,7 @@ void Fan::Render(){
         draw(bladeColor[i]);
     
         transform.TransformPopMatrix();
+        
     }
 
 
