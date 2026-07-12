@@ -27,7 +27,7 @@ static constexpr float kTapThreshold = 12.0f; // px: below this it's a tap
 
 float lastX, lastY; // previous touch position
 float movedDistance; // total movement since touch-down
-std::chrono::steady_clock::time_point lastMoveTime;
+std::chrono::steady_clock::time_point lastMoveTime{};
 
 #ifdef PLATFORM_ANDROID
     explicit Fan(AAssetManager* assetMgr);

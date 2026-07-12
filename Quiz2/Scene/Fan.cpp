@@ -35,7 +35,6 @@ static const GLushort kIndices[36] = {
     1, 2, 5, 2, 6, 5,
     3, 0, 7, 0, 4, 7};
 
-// look at this later
 static constexpr GLuint ATTRIB_POSITION = 0;
 static constexpr GLuint ATTRIB_COLOR = 1;
 
@@ -197,6 +196,8 @@ void Fan::Render(){
         glm::vec3{0.f, 0.f, 1.f} // green 
     };
 
+    dragBoost *= 0.98f; // fan decay
+    
     if(fanOn) spinAngle += kBaseSpeed + dragBoost;
     if(spinAngle >= 360.f){
         spinAngle -= 360.0f;
@@ -253,10 +254,26 @@ void Fan::TouchEventDown(float x, float y){
     lastY = y;
 
     movedDistance = 0;
+
+    lastMoveTime = std::chrono::steady_clock::now();
+
 }
 
 void Fan::TouchEventMove(float x, float y){
-    movedDistance += hypot(lastX - x, lastY - y);
+    float dx = lastX -x;
+    float dy = lastY - y;
+
+    lastX = x;
+    lastY = y;
+
+    movedDistance += hypot(dx, dy);
+
+    float dist = std::sqrt(dx*dx + dy*dy); // pixels this event
+    std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
+    float dtMs =  std::chrono::duration<float>(currentTime - lastMoveTime).count();
+    lastMoveTime = currentTime;
+    float velocity = dist /dtMs; // pixels per millisecond
+    dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
 }
 
 void Fan::TouchEventRelease(float x, float y){
@@ -264,4 +281,5 @@ void Fan::TouchEventRelease(float x, float y){
         fanOn = !fanOn;
         LOGI("Fan %s", fanOn ? "ON" : "OFF");
     }
+    //dragBoost = 0;
 }

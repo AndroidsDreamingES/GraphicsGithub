@@ -1,0 +1,14 @@
+# Target labels
+ glm-populate
+# Source files and their labels
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/CMakeFiles/glm-populate
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/CMakeFiles/glm-populate.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/CMakeFiles/glm-populate-complete.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test.rule
+D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update.rule

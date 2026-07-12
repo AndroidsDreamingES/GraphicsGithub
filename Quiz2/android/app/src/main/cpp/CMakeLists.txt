@@ -10,6 +10,17 @@ endif()
 
 add_definitions(-DANDROID -DPLATFORM_ANDROID)
 
+# Fetch GLM
+include(FetchContent)
+
+FetchContent_Declare(
+    glm
+    GIT_REPOSITORY https://github.com/g-truc/glm.git
+    GIT_TAG master
+)
+
+FetchContent_MakeAvailable(glm)
+
 set(SCENE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Scene)
 
 add_library(vertexarrayobject SHARED
@@ -17,6 +28,8 @@ add_library(vertexarrayobject SHARED
     ${SCENE_DIR}/Renderer.cpp
     ${SCENE_DIR}/Cube.cpp
     ${SCENE_DIR}/Grid.cpp
+    ${SCENE_DIR}/Transform.cpp
+    ${SCENE_DIR}/Fan.cpp
 )
 
 target_include_directories(vertexarrayobject PRIVATE
@@ -30,4 +43,4 @@ find_library(glesv3-lib  GLESv3)
 find_library(egl-lib     EGL)
 
 target_link_libraries(vertexarrayobject
-    ${log-lib} ${android-lib} ${glesv3-lib} ${egl-lib})
+    glm ${log-lib} ${android-lib} ${glesv3-lib} ${egl-lib})

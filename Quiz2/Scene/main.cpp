@@ -38,6 +38,15 @@ static void mouseButtonCB(GLFWwindow* win, int btn, int action, int)
         Renderer::Instance().TouchEventRelease((float)mx, (float)my);
 }
 
+// for cursor movement callback
+static void cursorPosCB(GLFWwindow* win, double mx, double my)
+{
+    // only when the left mouse btn is held down
+    if(glfwGetMouseButton(win, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS){
+        Renderer::Instance().TouchEventMove((float)mx, (float)my);
+    }
+}
+
 static void main_loop()
 {
     if (glfwWindowShouldClose(g_window)) {
@@ -64,6 +73,7 @@ int main()
     glfwMakeContextCurrent(g_window);
     glfwSetFramebufferSizeCallback(g_window, fbsize_cb);
     glfwSetMouseButtonCallback(g_window,     mouseButtonCB);
+    glfwSetCursorPosCallback(window, cursorPosCB);
 
     Renderer::Instance().initializeRenderer();
     int w, h; glfwGetFramebufferSize(g_window, &w, &h);
@@ -93,6 +103,12 @@ static void main_loop()
         case SDL_MOUSEBUTTONUP:
             Renderer::Instance().TouchEventRelease(
                 (float)ev.button.x, (float)ev.button.y); break;
+        case SDL_MOUSEMOTION: // for the swiping action
+            if(ev.motion.state && SDL_BUTTON_LMASK){ // only check when left mouse is held
+                Renderer::Instance().TouchEventMove(
+                    (float)ev.button.x, (float)ev.button.y);
+                }
+            break;
         default: break;
         }
     }
@@ -137,10 +153,22 @@ static void mouseButtonCB(GLFWwindow* win, int btn, int action, int)
 {
     if (btn != GLFW_MOUSE_BUTTON_LEFT) return;
     double mx, my; glfwGetCursorPos(win, &mx, &my);
-    if (action == GLFW_PRESS)
+    if (action == GLFW_PRESS){
         Renderer::Instance().TouchEventDown((float)mx, (float)my);
-    else
+    }
+    else{
         Renderer::Instance().TouchEventRelease((float)mx, (float)my);
+    }
+        
+}
+
+// for cursor movement callback
+static void cursorPosCB(GLFWwindow* win, double mx, double my)
+{
+    // only when the left mouse btn is held down
+    if(glfwGetMouseButton(win, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS){
+        Renderer::Instance().TouchEventMove((float)mx, (float)my);
+    }
 }
 
 int main()
@@ -164,6 +192,7 @@ int main()
 
     glfwSetFramebufferSizeCallback(window, framebufferSizeCB);
     glfwSetMouseButtonCallback(window, mouseButtonCB);
+    glfwSetCursorPosCallback(window, cursorPosCB);
 
     Renderer::Instance().initializeRenderer();
     int w, h; glfwGetFramebufferSize(window, &w, &h);

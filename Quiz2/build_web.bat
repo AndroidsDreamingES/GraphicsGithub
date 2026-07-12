@@ -8,13 +8,22 @@ REM   SDL2  – legacy fallback        (no -DUSE_GLFW, -s USE_SDL=2)
 
 IF NOT EXIST web MKDIR web
 
+IF NOT EXIST external\glm (
+     git  clone --depth 1 https://github.com//g-truc/glm.git external/glm   
+) else (
+     git -C external\glm pull
+)
+
 REM --- GLFW backend (default) -----------------------------------------------
 emcc -std=c++17 ^
      Scene/main.cpp ^
      Scene/Renderer.cpp ^
+     Scene/Transform.cpp ^
      Scene/Cube.cpp ^
      Scene/Grid.cpp ^
+     Scene/Fan.cpp ^
      -IScene ^
+     -Iexternal/glm ^
      -DUSE_GLFW ^
      -s USE_GLFW=3 ^
      -s USE_WEBGL2=1 ^
@@ -28,9 +37,12 @@ REM --- SDL2 backend (opt-in) ------------------------------------------------
 REM emcc -std=c++17 ^
 REM      Scene/main.cpp ^
 REM      Scene/Renderer.cpp ^
+REM      Scene/Transform.cpp ^
 REM      Scene/Cube.cpp ^
 REM      Scene/Grid.cpp ^
+REM      Scene/Fan.cpp ^
 REM      -IScene ^
+REM      -Iexternal/glm ^
 REM      -s USE_SDL=2 ^
 REM      -s USE_WEBGL2=1 ^
 REM      -s FULL_ES3=1 ^

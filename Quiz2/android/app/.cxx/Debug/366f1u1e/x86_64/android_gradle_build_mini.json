@@ -1,5 +1,7 @@
 {
   "buildFiles": [
+    "D:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64\\_deps\\glm-src\\CMakeLists.txt",
+    "D:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64\\_deps\\glm-src\\glm\\CMakeLists.txt",
     "D:\\GraphicsGithub\\Quiz2\\android\\app\\src\\main\\cpp\\CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
@@ -17,6 +19,12 @@
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
+    "glm::@ce54d98d7b326a3e12a8": {
+      "artifactName": "glm",
+      "abi": "x86_64",
+      "output": "D:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64\\_deps\\glm-build\\glm\\libglm.a",
+      "runtimeFiles": []
+    },
     "vertexarrayobject::@6890427a1f51a3e7e1df": {
       "artifactName": "vertexarrayobject",
       "abi": "x86_64",
