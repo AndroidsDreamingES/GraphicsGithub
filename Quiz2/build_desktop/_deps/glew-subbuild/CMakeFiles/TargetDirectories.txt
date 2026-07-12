@@ -1,3 +1,0 @@
-D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/glew-populate.dir
-D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/ALL_BUILD.dir
-D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/ZERO_CHECK.dir

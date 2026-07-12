@@ -1,6 +1,0 @@
--- GLM: Version 1.1.0
--- GLM: Disable -Wc++98-compat warnings
--- GLM: Build with C++ features auto detection
--- Configuring done
--- Generating done
--- Build files have been written to: D:/GraphicsGithub/Quiz2/android/app/.cxx/Debug/366f1u1e/x86_64
