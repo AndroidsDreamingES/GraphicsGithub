@@ -1,0 +1,18 @@
+@echo off
+"D:\\AndroidStudio\\cmake\\3.22.1\\bin\\cmake.exe" ^
+  "-HD:\\GraphicsGithub\\Quiz2\\android\\app\\src\\main\\cpp" ^
+  "-DCMAKE_SYSTEM_NAME=Android" ^
+  "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON" ^
+  "-DCMAKE_SYSTEM_VERSION=34" ^
+  "-DANDROID_PLATFORM=android-34" ^
+  "-DANDROID_ABI=x86_64" ^
+  "-DCMAKE_ANDROID_ARCH_ABI=x86_64" ^
+  "-DANDROID_NDK=D:\\AndroidStudio\\ndk\\27.0.12077973" ^
+  "-DCMAKE_ANDROID_NDK=D:\\AndroidStudio\\ndk\\27.0.12077973" ^
+  "-DCMAKE_TOOLCHAIN_FILE=D:\\AndroidStudio\\ndk\\27.0.12077973\\build\\cmake\\android.toolchain.cmake" ^
+  "-DCMAKE_MAKE_PROGRAM=D:\\AndroidStudio\\cmake\\3.22.1\\bin\\ninja.exe" ^
+  "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\\GraphicsGithub\\Quiz2\\android\\app\\build\\intermediates\\cxx\\Debug\\366f1u1e\\obj\\x86_64" ^
+  "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\\GraphicsGithub\\Quiz2\\android\\app\\build\\intermediates\\cxx\\Debug\\366f1u1e\\obj\\x86_64" ^
+  "-DCMAKE_BUILD_TYPE=Debug" ^
+  "-BD:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64" ^
+  -GNinja

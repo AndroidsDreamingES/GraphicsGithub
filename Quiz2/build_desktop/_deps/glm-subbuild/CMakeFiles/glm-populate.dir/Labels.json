@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/glm-populate"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/f37aff4e42c106a385c643c658381c20/glm-populate.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/a74a7bb7a66299321169ab8a3017ab2e/glm-populate-complete.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-build.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-configure.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-download.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-install.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-patch.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-test.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glm-subbuild/CMakeFiles/17c06b5e9110f4a99e89c780d378303a/glm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glm-populate"
+		],
+		"name" : "glm-populate"
+	}
+}

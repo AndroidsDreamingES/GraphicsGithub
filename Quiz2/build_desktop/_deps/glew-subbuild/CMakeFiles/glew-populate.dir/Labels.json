@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/glew-populate"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/5b97a87425b312dfd0676daf88ceef45/glew-populate.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/c7971b35cb0925254f3bb07fd9bf9d22/glew-populate-complete.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-build.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-configure.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-download.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-install.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-patch.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-test.rule"
+		},
+		{
+			"file" : "D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/CMakeFiles/e18e0ee4fcba6da8a3c0bf87acfe933b/glew-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glew-populate"
+		],
+		"name" : "glew-populate"
+	}
+}

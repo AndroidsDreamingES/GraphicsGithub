@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "D:\\GraphicsGithub\\Quiz2\\android\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\AndroidStudio\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\AndroidStudio\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\GraphicsGithub\\Quiz2\\android\\app\\.cxx\\Debug\\366f1u1e\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "vertexarrayobject::@6890427a1f51a3e7e1df": {
+      "artifactName": "vertexarrayobject",
+      "abi": "x86_64",
+      "output": "D:\\GraphicsGithub\\Quiz2\\android\\app\\build\\intermediates\\cxx\\Debug\\366f1u1e\\obj\\x86_64\\libvertexarrayobject.so",
+      "runtimeFiles": []
+    }
+  }
+}

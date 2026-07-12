@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\e18e0ee4fcba6da8a3c0bf87acfe933b\glew-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\c7971b35cb0925254f3bb07fd9bf9d22\glew-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\5b97a87425b312dfd0676daf88ceef45\glew-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\glew-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B0B65602-8CEE-3722-950F-AAD9AA659965}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

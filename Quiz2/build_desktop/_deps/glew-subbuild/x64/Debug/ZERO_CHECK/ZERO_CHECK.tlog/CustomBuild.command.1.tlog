@@ -1,0 +1,10 @@
+^D:\GRAPHICSGITHUB\QUIZ2\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\5B97A87425B312DFD0676DAF88CEEF45\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild -BD:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GraphicsGithub/Quiz2/build_desktop/_deps/glew-subbuild/glew-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

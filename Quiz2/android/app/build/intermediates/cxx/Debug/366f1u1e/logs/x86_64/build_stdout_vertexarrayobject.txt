@@ -1,0 +1,42 @@
+ninja: Entering directory `D:\GraphicsGithub\Quiz2\android\app\.cxx\Debug\366f1u1e\x86_64'
+[1/5] Building CXX object CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o
+In file included from D:/GraphicsGithub/Quiz2/android/app/src/main/cpp/NativeTemplate.cpp:16:
+In file included from D:/GraphicsGithub/Quiz2/android/app/src/main/cpp/../../../../../Scene/Renderer.h:4:
+D:/GraphicsGithub/Quiz2/android/app/src/main/cpp/../../../../../Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[2/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Renderer.cpp.o
+In file included from D:/GraphicsGithub/Quiz2/Scene/Renderer.cpp:2:
+In file included from D:/GraphicsGithub/Quiz2/Scene/Renderer.h:4:
+D:/GraphicsGithub/Quiz2/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[3/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Cube.cpp.o
+In file included from D:/GraphicsGithub/Quiz2/Scene/Cube.cpp:2:
+In file included from D:/GraphicsGithub/Quiz2/Scene/Cube.h:20:
+D:/GraphicsGithub/Quiz2/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[4/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Grid.cpp.o
+In file included from D:/GraphicsGithub/Quiz2/Scene/Grid.cpp:2:
+In file included from D:/GraphicsGithub/Quiz2/Scene/Grid.h:16:
+D:/GraphicsGithub/Quiz2/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[5/5] Linking CXX shared library D:\GraphicsGithub\Quiz2\android\app\build\intermediates\cxx\Debug\366f1u1e\obj\x86_64\libvertexarrayobject.so

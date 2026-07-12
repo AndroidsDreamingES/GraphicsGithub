@@ -1,0 +1,6 @@
+# ninja log v5
+0	2648	8054548195005923	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	80731758a8547776
+17	2735	8054548195873840	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Renderer.cpp.o	bb7bbaf02bfb156a
+31	3106	8054548199440634	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Cube.cpp.o	5a393745a0de415e
+42	3178	8054548200220691	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz2/Scene/Grid.cpp.o	7e8d66dd58fcdeae
+3179	3405	8054548202482948	D:/GraphicsGithub/Quiz2/android/app/build/intermediates/cxx/Debug/366f1u1e/obj/x86_64/libvertexarrayobject.so	b13daa6b5d47c598

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\CMakeFiles\fd50fffd3d412150086ff165dc85414f\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC112D5A-BA0F-3C8C-BCE5-C5101B0D7E26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

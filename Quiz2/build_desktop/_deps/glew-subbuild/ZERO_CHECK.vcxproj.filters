@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz2\build_desktop\_deps\glew-subbuild\CMakeFiles\5b97a87425b312dfd0676daf88ceef45\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B0B65602-8CEE-3722-950F-AAD9AA659965}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
