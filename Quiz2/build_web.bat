@@ -19,8 +19,6 @@ emcc -std=c++17 ^
      Scene/main.cpp ^
      Scene/Renderer.cpp ^
      Scene/Transform.cpp ^
-     Scene/Cube.cpp ^
-     Scene/Grid.cpp ^
      Scene/Fan.cpp ^
      -IScene ^
      -Iexternal/glm ^
@@ -38,8 +36,6 @@ REM emcc -std=c++17 ^
 REM      Scene/main.cpp ^
 REM      Scene/Renderer.cpp ^
 REM      Scene/Transform.cpp ^
-REM      Scene/Cube.cpp ^
-REM      Scene/Grid.cpp ^
 REM      Scene/Fan.cpp ^
 REM      -IScene ^
 REM      -Iexternal/glm ^

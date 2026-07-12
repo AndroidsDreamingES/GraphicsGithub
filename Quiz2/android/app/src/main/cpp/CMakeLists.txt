@@ -26,8 +26,6 @@ set(SCENE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Scene)
 add_library(vertexarrayobject SHARED
     NativeTemplate.cpp
     ${SCENE_DIR}/Renderer.cpp
-    ${SCENE_DIR}/Cube.cpp
-    ${SCENE_DIR}/Grid.cpp
     ${SCENE_DIR}/Transform.cpp
     ${SCENE_DIR}/Fan.cpp
 )
