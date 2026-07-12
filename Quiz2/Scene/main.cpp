@@ -73,7 +73,7 @@ int main()
     glfwMakeContextCurrent(g_window);
     glfwSetFramebufferSizeCallback(g_window, fbsize_cb);
     glfwSetMouseButtonCallback(g_window,     mouseButtonCB);
-    glfwSetCursorPosCallback(window, cursorPosCB);
+    glfwSetCursorPosCallback(g_window, cursorPosCB);
 
     Renderer::Instance().initializeRenderer();
     int w, h; glfwGetFramebufferSize(g_window, &w, &h);
