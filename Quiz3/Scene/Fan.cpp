@@ -302,7 +302,6 @@ void Fan::draw(glm::vec3 color)
     // ????
     glm::mat4 mvp = *transform.TransformGetModelViewProjectionMatrix();
 
-    glm::mat4 modelMatrix = *transform.TransformGetModelMatrix();
     glm::mat4 mv = *transform.TransformGetModelViewMatrix();
     glm::mat3 normalMatrix = glm::inverse(glm::transpose(glm::mat3(mv)));
 
@@ -311,10 +310,16 @@ void Fan::draw(glm::vec3 color)
     //mvp *= *m_transform.TransformGetModelMatrix();
     if(uMVP >= 0){
         glUniformMatrix4fv(uMVP, 1, GL_FALSE, glm::value_ptr(mvp));
-        glUniformMatrix3fv(uNormalMatrix, 1, GL_FALSE, glm::value_ptr(normalMatrix));
-        glUniformMatrix4fv(uMV, 1, GL_FALSE, glm::value_ptr(mv));
     }
     
+    if(uNormalMatrix >=0){
+        glUniformMatrix3fv(uNormalMatrix, 1, GL_FALSE, glm::value_ptr(normalMatrix));
+    }
+
+    if(uMV >=0){
+        glUniformMatrix4fv(uMV, 1, GL_FALSE, glm::value_ptr(mv));
+    }
+
     if(uMatDiff >= 0){
         //glUniform3fv(uPartColor, 1, glm::value_ptr(color));
         glUniform3fv(uMatDiff, 1, glm::value_ptr(color));

@@ -32,6 +32,9 @@ public:
     GLuint vbo = 0;
 
     GLint uGroundMVP = -1;
+    GLint uGroundMV = -1;
+    GLint uNormalMatrix = -1;
+
     glm::mat4 projMatrix{1.0f};
 
     float groundY = -3.6f;
