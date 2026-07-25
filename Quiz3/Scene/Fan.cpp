@@ -50,10 +50,6 @@ Fan::Fan()
 {
 
 #endif
-
-    
-    
-
     modelType = FanType;
     transform.TransformInit();
     transform.TransformSetMatrixMode(PROJECTION_MATRIX);
@@ -292,7 +288,7 @@ void Fan::Render(){
         transform.TransformPopMatrix();
         
     }
-
+    glDisable(GL_DEPTH_TEST);
     // draw(color) = upload mVP (TransformGetModelViewProjectionMatrix)
                 // + upload PARTCOLOR (glUniform3fv, one colour per part)
                 // + glDrawElements (the ONE shared cube, 36 indices)

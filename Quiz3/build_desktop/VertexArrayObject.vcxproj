@@ -429,6 +429,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Fan.cpp" />
+    <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Ground.cpp" />
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Renderer.cpp" />
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Scene3D.cpp" />
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\SceneHUD.cpp" />

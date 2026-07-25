@@ -4,6 +4,9 @@
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Fan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Ground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\GraphicsGithub\Quiz3\Scene\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -6,27 +6,27 @@ Scene3D::Scene3D(){
 
 #ifdef PLATFORM_ANDROID 
     fan = new Fan(assetMgr);
-    //ground = new Ground(assetMgr);
+    ground = new Ground(assetMgr);
 #else
     fan = new Fan();
-    //ground = new Ground();
+    ground = new Ground();
 #endif
 
 }
 
 void Scene3D::InitModel(){
     fan->InitModel();
-    //ground->InitModel();
+    ground->InitModel();
 }
 
 void Scene3D::Render(){
+    ground->Render();
     fan->Render();
-    //ground->Render();
 }
 
 void Scene3D::Resize(int w, int h){
+    ground->Resize(w, h);
     fan->Resize(w, h);
-    //ground->Resize(w, h);
 }
 
 void Scene3D::SetCameraDistance(float d){
@@ -40,5 +40,5 @@ bool PickAt(float screenX, float screenY){
 
 Scene3D::~Scene3D(){
     delete fan;
-    //delete ground;
+    delete ground;
 }
