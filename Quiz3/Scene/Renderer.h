@@ -4,6 +4,7 @@
 #include "Platform.h"
 #include <vector>
 #include "Scene3D.h"
+#include "SceneHUD.h"
 
 #ifdef PLATFORM_ANDROID
 #include <android/asset_manager.h>
@@ -41,6 +42,7 @@ private:
 
     // std::vector<Model*> models;
     Scene3D* scene3D;
+    SceneHUD* sceneHUD;
     int screenWidth  = 0;
     int screenHeight = 0;
 };
