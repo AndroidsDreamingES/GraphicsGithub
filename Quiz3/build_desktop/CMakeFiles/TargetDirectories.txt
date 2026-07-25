@@ -1,0 +1,17 @@
+D:/GraphicsGithub/Quiz3/build_desktop/CMakeFiles/VertexArrayObject.dir
+D:/GraphicsGithub/Quiz3/build_desktop/CMakeFiles/INSTALL.dir
+D:/GraphicsGithub/Quiz3/build_desktop/CMakeFiles/ALL_BUILD.dir
+D:/GraphicsGithub/Quiz3/build_desktop/CMakeFiles/ZERO_CHECK.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/CMakeFiles/uninstall.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/CMakeFiles/INSTALL.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/src/CMakeFiles/glfw.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glfw-build/src/CMakeFiles/INSTALL.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-build/CMakeFiles/libglew_static.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-build/CMakeFiles/INSTALL.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-build/CMakeFiles/ALL_BUILD.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-build/CMakeFiles/INSTALL.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-build/CMakeFiles/ALL_BUILD.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-build/glm/CMakeFiles/glm.dir
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-build/glm/CMakeFiles/INSTALL.dir

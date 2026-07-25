@@ -1,0 +1,150 @@
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-UPDATE.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps\glew-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/tmp/glew-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-BUILD.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-INSTALL.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\D48AFFAF2B2AD443EECD9E592090E41D\GLEW-POPULATE-TEST.RULE
+setlocal
+cd D:\GraphicsGithub\Quiz3\build_desktop\_deps\glew-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\F3EB6A9738D416ADEDDE635EA722BA5B\GLEW-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/CMakeFiles/Debug/glew-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/Debug/glew-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKEFILES\CD17119E9B4127873D8622F68C998F57\GLEW-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLEW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild -BD:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild --check-stamp-file D:/GraphicsGithub/Quiz3/build_desktop/_deps/glew-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

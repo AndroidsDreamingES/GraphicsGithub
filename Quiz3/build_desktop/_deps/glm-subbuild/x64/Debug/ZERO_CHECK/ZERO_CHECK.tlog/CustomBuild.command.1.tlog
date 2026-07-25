@@ -1,0 +1,10 @@
+^D:\GRAPHICSGITHUB\QUIZ3\BUILD_DESKTOP\_DEPS\GLM-SUBBUILD\CMAKEFILES\E63A463F3726D0B8E7343CFDD3C62EB0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild -BD:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/glm-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

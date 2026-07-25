@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\2437b63a32485e38f05e00206ee72768\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\c840fee3e426542dde53c84177d24671\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\160d0dbb728bc062446d0ae3c8c5a328\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\GraphicsGithub\Quiz3\build_desktop\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{831BC1FD-66B8-3688-9F24-20C1B745DBC0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

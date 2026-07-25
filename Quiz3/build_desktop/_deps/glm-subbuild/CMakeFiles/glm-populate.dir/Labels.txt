@@ -1,0 +1,14 @@
+# Target labels
+ glm-populate
+# Source files and their labels
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/glm-populate
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/e63a463f3726d0b8e7343cfdd3c62eb0/glm-populate.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/69546f6195a0bb27ebf8f1b70f45b5ba/glm-populate-complete.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-build.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-configure.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-download.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-install.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-mkdir.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-patch.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-test.rule
+D:/GraphicsGithub/Quiz3/build_desktop/_deps/glm-subbuild/CMakeFiles/2cbbb354f8ec1f9b60ecb813e9e3cfeb/glm-populate-update.rule
