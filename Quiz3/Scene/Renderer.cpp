@@ -53,6 +53,12 @@ void Renderer::render()
     sceneHUD->Render();
 }
 
-void Renderer::TouchEventDown(float x, float y)    { }//for (Model* m : models) m->TouchEventDown(x,y); }
+void Renderer::TouchEventDown(float x, float y){
+    if(sceneHUD && sceneHUD->TouchDown(x, y)) return;
+}
+
 void Renderer::TouchEventMove(float x, float y)    { }//for (Model* m : models) m->TouchEventMove(x,y); }
-void Renderer::TouchEventRelease(float x, float y) { }//for (Model* m : models) m->TouchEventRelease(x,y); }
+
+void Renderer::TouchEventRelease(float x, float y) { 
+    if(sceneHUD) sceneHUD->TouchRelease();
+}//for (Model* m : models) m->TouchEventRelease(x,y); }

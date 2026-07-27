@@ -292,6 +292,8 @@ void Fan::Render(){
     // draw(color) = upload mVP (TransformGetModelViewProjectionMatrix)
                 // + upload PARTCOLOR (glUniform3fv, one colour per part)
                 // + glDrawElements (the ONE shared cube, 36 indices)
+    
+    glUseProgram(0);
 }
 
 
