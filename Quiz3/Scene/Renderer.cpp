@@ -54,7 +54,9 @@ void Renderer::render()
 }
 
 void Renderer::TouchEventDown(float x, float y){
-    if(sceneHUD && sceneHUD->TouchDown(x, y)) return;
+    if(sceneHUD && sceneHUD->TouchDown(x, y)){
+        scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());  
+    } 
 }
 
 void Renderer::TouchEventMove(float x, float y)    { }//for (Model* m : models) m->TouchEventMove(x,y); }

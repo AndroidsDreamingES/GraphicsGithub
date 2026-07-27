@@ -19,6 +19,7 @@ class Scene3D : public Model {
     void Resize(int w, int h) override;
 
     void SetCameraDistance(float d); // called by SceneHUD's zoom buttons
+    void SetFanSpeed(float d); 
     bool PickAt(float screenX, float screenY); // 3d picking
 
     private:

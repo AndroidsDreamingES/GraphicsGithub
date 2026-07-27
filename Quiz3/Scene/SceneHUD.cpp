@@ -289,6 +289,35 @@ bool SceneHUD::TouchDown(float x, float y){
 
         if(tri1 || tri2){
             activeButton = i;
+            
+            std::string buttonPressed;
+            switch(i){
+                case 0:
+                buttonPressed = "+SPD";
+                if(speed < 20){
+                    ++speed;
+                }
+
+                break;
+                
+                case 1:
+                buttonPressed = "-SPD";
+                if(speed > 0){
+                    --speed;
+                }
+
+                break;
+
+                case 2:
+                buttonPressed = "+ZOOM";
+                break;
+
+                case 3:
+                buttonPressed = "-ZOOM";
+            }
+
+            LOGI("SceneHUD: %s pressed", buttonPressed.c_str());
+
             return true;
         }
     }

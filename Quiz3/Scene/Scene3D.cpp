@@ -29,6 +29,10 @@ void Scene3D::Resize(int w, int h){
     fan->Resize(w, h);
 }
 
+void Scene3D::SetFanSpeed(float d){
+    fan->rotationSpeed = d;
+}
+
 void Scene3D::SetCameraDistance(float d){
     cameraDistance = d;
 }

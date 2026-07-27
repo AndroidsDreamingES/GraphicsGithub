@@ -269,9 +269,12 @@ void Fan::Render(){
         glm::vec3{0.f, 0.f, 1.f} // green 
     };
 
-    dragBoost *= 0.98f; // fan decay
+    // dragBoost *= 0.98f; // fan decay
     
-    if(fanOn) spinAngle += kBaseSpeed + dragBoost;
+    // if(fanOn) spinAngle += kBaseSpeed + dragBoost;
+
+    if(fanOn) spinAngle += rotationSpeed;
+
     if(spinAngle >= 360.f){
         spinAngle -= 360.0f;
     }
@@ -361,15 +364,15 @@ void Fan::TouchEventMove(float x, float y){
     float dtMs =  std::chrono::duration<float>(currentTime - lastMoveTime).count();
     lastMoveTime = currentTime;
     float velocity = dist /dtMs; // pixels per millisecond
-    dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
+    // dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
 
-    LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
+   // LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
 }
 
 void Fan::TouchEventRelease(float x, float y){
-    if(movedDistance < kTapThreshold){
-        fanOn = !fanOn;
-        LOGI("Fan %s", fanOn ? "ON" : "OFF");
-    }
+    // if(movedDistance < kTapThreshold){
+    //     fanOn = !fanOn;
+    //     LOGI("Fan %s", fanOn ? "ON" : "OFF");
+    // }
     //dragBoost = 0;
 }
