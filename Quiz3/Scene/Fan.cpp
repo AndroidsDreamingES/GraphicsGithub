@@ -230,7 +230,7 @@ void Fan::Render(){
     transform.TransformLoadIdentity();
 
     // world : translate (0, 0.8, -8) -> Rotate (20*, y) <- pull-back + 3D tilt, shared by every part
-    transform.TransformTranslate(0.f, 0.8f, -8.f); 
+    transform.TransformTranslate(0.f, 0.8f, -cameraDistance); 
     transform.TransformRotate(glm::radians(20.f), 0.f, 1.f, 0.f);
 
     // base : push -> T(0, -2.6, 0) -> S(1.6, 0.25, 0.8) -> draw(brown) -> pop

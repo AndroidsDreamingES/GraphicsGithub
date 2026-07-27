@@ -35,6 +35,8 @@ void Scene3D::SetFanSpeed(float d){
 
 void Scene3D::SetCameraDistance(float d){
     cameraDistance = d;
+    fan->cameraDistance = cameraDistance;
+    ground->cameraDistance = cameraDistance;
 }
 
 bool PickAt(float screenX, float screenY){

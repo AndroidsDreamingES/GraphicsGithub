@@ -310,10 +310,16 @@ bool SceneHUD::TouchDown(float x, float y){
 
                 case 2:
                 buttonPressed = "+ZOOM";
+                if(cameraDist > 3){
+                    --cameraDist;
+                }
                 break;
 
                 case 3:
                 buttonPressed = "-ZOOM";
+                if(cameraDist < 20){
+                    ++cameraDist;
+                }
             }
 
             LOGI("SceneHUD: %s pressed", buttonPressed.c_str());

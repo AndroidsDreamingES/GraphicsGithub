@@ -20,7 +20,8 @@ Transform transform; // provided matrix stack (model/view/projection)
 float spinAngle = 0.0f; // current blade angle (degrees)
 bool fanOn = true; // toggled by a tap
 // float dragBoost = 0.0f; // extra speed while dragging, 0 otherwise
-float rotationSpeed= 8.0f; 
+float rotationSpeed= 8.0f;
+float cameraDistance = 8.0f; 
 
 // static constexpr float kBaseSpeed = 1.5f; // deg/frame when ON
 // static constexpr float kMaxBoost = 20.0f; // clamp for the drag boost

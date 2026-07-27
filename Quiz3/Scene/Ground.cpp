@@ -92,7 +92,7 @@ void main() {
 )GLSL";
 
 
-static const float GROUND_HALF = 12.0f;
+static const float GROUND_HALF = 48.0f;
 
 #ifdef PLATFORM_ANDROID
 Ground::Ground(AAssetManager *assetMgr) : mgr(assetMgr)
@@ -200,7 +200,7 @@ void Ground::Render(){
     transform.TransformLoadIdentity();
 
     // world : translate (0, 0.8, -8) -> Rotate (20*, y) <- pull-back + 3D tilt, shared by every part
-    transform.TransformTranslate(0.f, 0.8f, -8.f); 
+    transform.TransformTranslate(0.f, 0.8f, -cameraDistance); 
     transform.TransformRotate(glm::radians(20.f), 0.f, 1.f, 0.f);
 
     // MVP assembled by hand: glm projection x (view*model from the stack)
