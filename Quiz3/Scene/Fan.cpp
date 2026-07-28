@@ -219,6 +219,8 @@ void Fan::Resize(int w, int h)
 
 // Render
 
+glm::vec3 selectedColor = glm::vec3{255/255.f, 210/255.f, 42/255.f};
+
 void Fan::Render(){
 
     if(!program || !vao) return;
@@ -236,26 +238,54 @@ void Fan::Render(){
     // base : push -> T(0, -2.6, 0) -> S(1.6, 0.25, 0.8) -> draw(brown) -> pop
     transform.TransformPushMatrix();
     transform.TransformTranslate(0.f, -3.6f, 0.f);
+
+    baseWorldMatrix = *transform.TransformGetModelMatrix();
+
     transform.TransformScale(1.6f, 0.25f, 0.8f);
+
     glm::vec3 brown{0.45f, 0.28f, 0.12f};
     // before draw, calculate the normal matrix
-    draw(brown);
+    if(baseStatus){
+        draw(selectedColor);
+    }
+    else{
+        draw(brown);    
+    }
+    
     transform.TransformPopMatrix();
 
     // pole : push -> T(0, -1.21, 0) -> S(0.15, 2.53, 0.15) -> draw(gray) -> pop
     transform.TransformPushMatrix();
     transform.TransformTranslate(0.f, -1.21f, 0.f);
+
+    poleWorldMatrix = *transform.TransformGetModelMatrix();
+
     transform.TransformScale(0.15f, 2.53f, 0.15f);
     glm::vec3 gray{0.55f, 0.55f, 0.58f};
-    draw(gray);
+    if(poleStatus){
+        draw(selectedColor);
+    }
+    else{
+        draw(gray);
+    }
+    
     transform.TransformPopMatrix();
     
     // hub : push -> T(0, 0.2, 0) -> S (0.3, 0.3, 0.3) -> draw(dark gray) -> pop
     transform.TransformPushMatrix();
     transform.TransformTranslate(0.f, 1.2f, 0.f);
+
+    hubWorldMatrix = *transform.TransformGetModelMatrix();
+
     transform.TransformScale(0.3f, 0.3f, 0.3f); 
     glm::vec3 darkGray{0.2f, 0.2f, 0.22f};
-    draw(darkGray);
+    if(hubStatus){
+        draw(selectedColor);
+    }
+    else{
+        draw(darkGray);
+    }
+    
     transform.TransformPopMatrix();
 
     // for i in 0...3:
@@ -279,14 +309,25 @@ void Fan::Render(){
         spinAngle -= 360.0f;
     }
 
+    bladesWorldMatrix.clear();
+
     for(int i =0; i < 4; ++i){
         transform.TransformPushMatrix();
         transform.TransformTranslate(0.f, 1.2f, 0.15f);
         transform.TransformRotate(glm::radians(spinAngle + i* 90.f), 0.f, 0.f, 1.f);
 
         transform.TransformTranslate(0.f, 0.55f, 0.f);
+
+        bladesWorldMatrix.push_back(*transform.TransformGetModelMatrix());
+
         transform.TransformScale(0.22f, 0.8f, 0.05f);
-        draw(bladeColor[i]);
+        if(bladesStatus[i]){
+            draw(selectedColor);
+        }
+        else{
+            draw(bladeColor[i]);
+        }
+        
     
         transform.TransformPopMatrix();
         
@@ -311,7 +352,6 @@ void Fan::draw(glm::vec3 color)
     glm::mat3 normalMatrix = glm::inverse(glm::transpose(glm::mat3(mv)));
 
     
-
     //mvp *= *m_transform.TransformGetModelMatrix();
     if(uMVP >= 0){
         glUniformMatrix4fv(uMVP, 1, GL_FALSE, glm::value_ptr(mvp));

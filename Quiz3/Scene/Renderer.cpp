@@ -57,6 +57,9 @@ void Renderer::TouchEventDown(float x, float y){
     if(sceneHUD && sceneHUD->TouchDown(x, y)){
         scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());  
         scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
+    }
+    else{
+        scene3D->PickAt(x, y);
     } 
 }
 

@@ -47,6 +47,16 @@ std::chrono::steady_clock::time_point lastMoveTime{};
     void TouchEventMove(float x, float y) override;
     void TouchEventRelease(float x, float y) override;
 
+    const glm::mat4& GetBaseWorldMatrix(){return baseWorldMatrix;};
+    const glm::mat4& GetPoleWorldMatrix(){return poleWorldMatrix;};
+    const glm::mat4& GetHubWorldMatrix(){return hubWorldMatrix;};
+    const glm::mat4& GetBladesWorldMatrix(int index){return bladesWorldMatrix[index];};
+
+    void ToggleBaseStatus(){baseStatus = !baseStatus;}
+    void TogglePoleStatus(){poleStatus = !poleStatus;}
+    void ToggleHubStatus(){hubStatus = !hubStatus;}
+    void ToggleBladesStatus(int index){bladesStatus[index] = !bladesStatus[index];}
+
 private:
     void draw(glm::vec3 color);
 
@@ -66,6 +76,17 @@ private:
     GLint uNormalMatrix = -1;
     GLint uMV = -1;
     GLint uMatDiff = -1;
+
+    glm::mat4 baseWorldMatrix;
+    glm::mat4 poleWorldMatrix;
+    glm::mat4 hubWorldMatrix;
+    std::vector<glm::mat4> bladesWorldMatrix;
+
+
+    bool baseStatus{false}; // if true means selected
+    bool poleStatus{false};
+    bool hubStatus{false};
+    std::vector<bool> bladesStatus{false, false, false, false};
 
     // VBO sub-region sizes
     GLsizeiptr posSize = 8*3*sizeof(GLfloat); // 8 vertices of 3 GLfloat (96 bytes)

@@ -20,10 +20,18 @@ class Scene3D : public Model {
 
     void SetCameraDistance(float d); // called by SceneHUD's zoom buttons
     void SetFanSpeed(float d); 
+
+    bool hits(glm::mat4 const& worldMatrix, const glm::vec3& rayOrigin, const glm::vec3& rayDir,
+              float radius, float& outT);
+    bool hitsBlade(glm::mat4 const& worldMatrix, const glm::vec3& rayOrigin, const glm::vec3 rayDir,
+              float radius, float halfLength, float& outT);
+
     bool PickAt(float screenX, float screenY); // 3d picking
 
     private:
     Fan* fan = nullptr;
     Ground* ground = nullptr;
     float cameraDistance = 8.0f;
+
+    int screenWidth = 800, screenHeight = 600;
 };
