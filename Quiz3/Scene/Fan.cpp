@@ -321,8 +321,8 @@ void Fan::Render()
 
     // if(fanOn) spinAngle += kBaseSpeed + dragBoost;
 
-    if (fanOn)
-        spinAngle += rotationSpeed;
+   
+    spinAngle += rotationSpeed;
 
     if (spinAngle >= 360.f)
     {
