@@ -7,12 +7,20 @@
 #include "Model.h"
 #include "Fan.h"
 #include "Ground.h"
+#ifdef PLATFORM_ANDROID
+#include <android/asset_manager.h>
+#endif
 
 class Scene3D : public Model {
     public:
 
+    #ifdef PLATFORM_ANDROID
+    explicit Scene3D(AAssetManager *assetMgr);
+    #else
     Scene3D();
-    ~Scene3D();
+    #endif
+
+    ~Scene3D() override;
 
     void InitModel() override;
     void Render() override;
@@ -34,4 +42,8 @@ class Scene3D : public Model {
     float cameraDistance = 8.0f;
 
     int screenWidth = 800, screenHeight = 600;
+
+    #ifdef PLATFORM_ANDROID
+    AAssetManager* mgr = nullptr;
+    #endif
 };

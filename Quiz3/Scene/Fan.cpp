@@ -16,17 +16,17 @@ static const GLfloat kPositions[8][3] = {
     {1.0f, -1.0f, -1.0f},  // V7
 };
 
-GLfloat kNormals[8][3] {0.f};
+GLfloat kNormals[8][3]{0.f};
 
 static const GLfloat kColors[8][3] = {
     {0.6f, 0.6f, 0.6f}, // V0 gray shades
-    {0.6f, 0.6f, 0.6f}, // V1 
-    {0.6f, 0.6f, 0.6f}, // V2 
-    {0.6f, 0.6f, 0.6f}, // V3 
-    {0.1f, 0.1f, 0.1f}, // V4 
-    {0.1f, 0.1f, 0.1f}, // V5 
-    {0.1f, 0.1f, 0.1f}, // V6 
-    {0.1f, 0.1f, 0.1f}, // V7 
+    {0.6f, 0.6f, 0.6f}, // V1
+    {0.6f, 0.6f, 0.6f}, // V2
+    {0.6f, 0.6f, 0.6f}, // V3
+    {0.1f, 0.1f, 0.1f}, // V4
+    {0.1f, 0.1f, 0.1f}, // V5
+    {0.1f, 0.1f, 0.1f}, // V6
+    {0.1f, 0.1f, 0.1f}, // V7
 };
 
 static const GLushort kIndices[36] = {
@@ -80,15 +80,17 @@ Fan::~Fan()
     }
 }
 
-void Fan::InitNormals(){
+void Fan::InitNormals()
+{
     // calculating the normals (lets do smooth shading..)
 
     // get the vertices for each triangle
-    for(size_t i = 0; i < sizeof(kIndices)/sizeof(kIndices[0]) ; i+=3){
+    for (size_t i = 0; i < sizeof(kIndices) / sizeof(kIndices[0]); i += 3)
+    {
 
         GLushort idx0 = kIndices[i];
-        GLushort idx1 = kIndices[i+1];
-        GLushort idx2 = kIndices[i+2];
+        GLushort idx1 = kIndices[i + 1];
+        GLushort idx2 = kIndices[i + 2];
 
         GLfloat p0[3] = {kPositions[idx0][0], kPositions[idx0][1], kPositions[idx0][2]};
         GLfloat p1[3] = {kPositions[idx1][0], kPositions[idx1][1], kPositions[idx1][2]};
@@ -99,23 +101,24 @@ void Fan::InitNormals(){
         GLfloat e1[3] = {p2[0] - p0[0], p2[1] - p0[1], p2[2] - p0[2]};
 
         glm::vec3 faceNormal = glm::cross(glm::vec3(e0[0], e0[1], e0[2]), glm::vec3(e1[0], e1[1], e1[2]));
-        
+
         // set the normals accordingly
         kNormals[idx0][0] += faceNormal.x;
         kNormals[idx0][1] += faceNormal.y;
         kNormals[idx0][2] += faceNormal.z;
-        
+
         kNormals[idx1][0] += faceNormal.x;
         kNormals[idx1][1] += faceNormal.y;
         kNormals[idx1][2] += faceNormal.z;
-        
+
         kNormals[idx2][0] += faceNormal.x;
         kNormals[idx2][1] += faceNormal.y;
         kNormals[idx2][2] += faceNormal.z;
     }
 
     // normalize accumulated normals
-    for(size_t i = 0; i < sizeof(kNormals)/sizeof(kNormals[0]); ++i){
+    for (size_t i = 0; i < sizeof(kNormals) / sizeof(kNormals[0]); ++i)
+    {
         glm::vec3 normalizedNormal = glm::normalize(glm::vec3{kNormals[i][0], kNormals[i][1], kNormals[i][2]});
         kNormals[i][0] = normalizedNormal.x;
         kNormals[i][1] = normalizedNormal.y;
@@ -145,32 +148,39 @@ void Fan::InitModel()
         LOGE("Fan: failed to build shader program");
         return;
     }
-    uMVP = glGetUniformLocation(program, "MODELVIEWPROJECTIONMATRIX"); 
+    uMVP = glGetUniformLocation(program, "MODELVIEWPROJECTIONMATRIX");
     uNormalMatrix = glGetUniformLocation(program, "NORMALMATRIX");
     uPartColor = glGetUniformLocation(program, "PARTCOLOR");
     uMV = glGetUniformLocation(program, "MODELVIEWMATRIX");
 
     // uniform locations for light
-    GLint uMatAmb    = glGetUniformLocation(program, "MaterialAmbient");
-    uMatDiff   = glGetUniformLocation(program, "MaterialDiffuse");
-    GLint uMatSpec   = glGetUniformLocation(program, "MaterialSpecular");
+    GLint uMatAmb = glGetUniformLocation(program, "MaterialAmbient");
+    uMatDiff = glGetUniformLocation(program, "MaterialDiffuse");
+    GLint uMatSpec = glGetUniformLocation(program, "MaterialSpecular");
 
-    GLint uShiny     = glGetUniformLocation(program, "ShininessFactor");
-    GLint uLightAmb  = glGetUniformLocation(program, "LightAmbient");
+    GLint uShiny = glGetUniformLocation(program, "ShininessFactor");
+    GLint uLightAmb = glGetUniformLocation(program, "LightAmbient");
     GLint uLightDiff = glGetUniformLocation(program, "LightDiffuse");
     GLint uLightSpec = glGetUniformLocation(program, "LightSpecular");
-    GLint uLightPos  = glGetUniformLocation(program, "LightPosition");
+    GLint uLightPos = glGetUniformLocation(program, "LightPosition");
 
     glUseProgram(program);
-    if (uMatAmb    >= 0) glUniform3f(uMatAmb,   0.1f,  0.1f,  0.1f);
+    if (uMatAmb >= 0)
+        glUniform3f(uMatAmb, 0.1f, 0.1f, 0.1f);
     // matDiff will be the colour of the part later
-    if (uMatSpec   >= 0) glUniform3f(uMatSpec,  1.0f,  1.0f,  1.0f);
-    if (uShiny     >= 0) glUniform1f(uShiny, 40.0f);
+    if (uMatSpec >= 0)
+        glUniform3f(uMatSpec, 1.0f, 1.0f, 1.0f);
+    if (uShiny >= 0)
+        glUniform1f(uShiny, 40.0f);
 
-    if (uLightAmb  >= 0) glUniform3f(uLightAmb,  1.0f, 1.0f, 1.0f);
-    if (uLightDiff >= 0) glUniform3f(uLightDiff, 1.0f, 1.0f, 1.0f);
-    if (uLightSpec >= 0) glUniform3f(uLightSpec, 1.0f, 1.0f, 1.0f);
-    if (uLightPos  >= 0) glUniform3f(uLightPos,  0.0f, 10.0f, 0.0f);
+    if (uLightAmb >= 0)
+        glUniform3f(uLightAmb, 1.0f, 1.0f, 1.0f);
+    if (uLightDiff >= 0)
+        glUniform3f(uLightDiff, 1.0f, 1.0f, 1.0f);
+    if (uLightSpec >= 0)
+        glUniform3f(uLightSpec, 1.0f, 1.0f, 1.0f);
+    if (uLightPos >= 0)
+        glUniform3f(uLightPos, 0.0f, 10.0f, 0.0f);
     glUseProgram(0);
 
     InitNormals();
@@ -208,7 +218,7 @@ void Fan::InitModel()
     LOGI("Fan::InitModel done (VAO=%u, VBO=%u, IBO=%u)", vao, vbo, ibo);
 }
 
-// Resize 
+// Resize
 
 void Fan::Resize(int w, int h)
 {
@@ -219,11 +229,13 @@ void Fan::Resize(int w, int h)
 
 // Render
 
-glm::vec3 selectedColor = glm::vec3{255/255.f, 210/255.f, 42/255.f};
+glm::vec3 selectedColor = glm::vec3{255 / 255.f, 210 / 255.f, 42 / 255.f};
 
-void Fan::Render(){
+void Fan::Render()
+{
 
-    if(!program || !vao) return;
+    if (!program || !vao)
+        return;
     glEnable(GL_DEPTH_TEST);
     glUseProgram(program);
 
@@ -232,7 +244,7 @@ void Fan::Render(){
     transform.TransformLoadIdentity();
 
     // world : translate (0, 0.8, -8) -> Rotate (20*, y) <- pull-back + 3D tilt, shared by every part
-    transform.TransformTranslate(0.f, 0.8f, -cameraDistance); 
+    transform.TransformTranslate(0.f, 0.8f, -cameraDistance);
     transform.TransformRotate(glm::radians(20.f), 0.f, 1.f, 0.f);
 
     // base : push -> T(0, -2.6, 0) -> S(1.6, 0.25, 0.8) -> draw(brown) -> pop
@@ -245,13 +257,15 @@ void Fan::Render(){
 
     glm::vec3 brown{0.45f, 0.28f, 0.12f};
     // before draw, calculate the normal matrix
-    if(baseStatus){
+    if (baseStatus)
+    {
         draw(selectedColor);
     }
-    else{
-        draw(brown);    
+    else
+    {
+        draw(brown);
     }
-    
+
     transform.TransformPopMatrix();
 
     // pole : push -> T(0, -1.21, 0) -> S(0.15, 2.53, 0.15) -> draw(gray) -> pop
@@ -262,84 +276,90 @@ void Fan::Render(){
 
     transform.TransformScale(0.15f, 2.53f, 0.15f);
     glm::vec3 gray{0.55f, 0.55f, 0.58f};
-    if(poleStatus){
+    if (poleStatus)
+    {
         draw(selectedColor);
     }
-    else{
+    else
+    {
         draw(gray);
     }
-    
+
     transform.TransformPopMatrix();
-    
+
     // hub : push -> T(0, 0.2, 0) -> S (0.3, 0.3, 0.3) -> draw(dark gray) -> pop
     transform.TransformPushMatrix();
     transform.TransformTranslate(0.f, 1.2f, 0.f);
 
     hubWorldMatrix = *transform.TransformGetModelMatrix();
 
-    transform.TransformScale(0.3f, 0.3f, 0.3f); 
+    transform.TransformScale(0.3f, 0.3f, 0.3f);
     glm::vec3 darkGray{0.2f, 0.2f, 0.22f};
-    if(hubStatus){
+    if (hubStatus)
+    {
         draw(selectedColor);
     }
-    else{
+    else
+    {
         draw(darkGray);
     }
-    
+
     transform.TransformPopMatrix();
 
     // for i in 0...3:
-        // blade : push -> T(0, 0.2, 0.15 ) -> R(spinAngle + i * 90, Z)
-                    //  -> T(0, 0.55, 0) -> S(0.22, 0.8, 0.05) -> draw(bladeColor[i]) -> pop
-    
+    // blade : push -> T(0, 0.2, 0.15 ) -> R(spinAngle + i * 90, Z)
+    //  -> T(0, 0.55, 0) -> S(0.22, 0.8, 0.05) -> draw(bladeColor[i]) -> pop
+
     std::vector<glm::vec3> bladeColor{
-        glm::vec3{1.f, 0.f, 0.f}, // red
-        glm::vec3{0.f, 1.f, 0.f}, // blue
+        glm::vec3{1.f, 0.f, 0.f},    // red
+        glm::vec3{0.f, 1.f, 0.f},    // blue
         glm::vec3{1.0f, 0.65f, 0.f}, // orange
-        glm::vec3{0.f, 0.f, 1.f} // green 
+        glm::vec3{0.f, 0.f, 1.f}     // green
     };
 
     // dragBoost *= 0.98f; // fan decay
-    
+
     // if(fanOn) spinAngle += kBaseSpeed + dragBoost;
 
-    if(fanOn) spinAngle += rotationSpeed;
+    if (fanOn)
+        spinAngle += rotationSpeed;
 
-    if(spinAngle >= 360.f){
+    if (spinAngle >= 360.f)
+    {
         spinAngle -= 360.0f;
     }
 
     bladesWorldMatrix.clear();
 
-    for(int i =0; i < 4; ++i){
+    for (int i = 0; i < 4; ++i)
+    {
         transform.TransformPushMatrix();
         transform.TransformTranslate(0.f, 1.2f, 0.15f);
-        transform.TransformRotate(glm::radians(spinAngle + i* 90.f), 0.f, 0.f, 1.f);
+        transform.TransformRotate(glm::radians(spinAngle + i * 90.f), 0.f, 0.f, 1.f);
 
         transform.TransformTranslate(0.f, 0.55f, 0.f);
 
         bladesWorldMatrix.push_back(*transform.TransformGetModelMatrix());
 
         transform.TransformScale(0.22f, 0.8f, 0.05f);
-        if(bladesStatus[i]){
+        if (bladesStatus[i])
+        {
             draw(selectedColor);
         }
-        else{
+        else
+        {
             draw(bladeColor[i]);
         }
-        
-    
+
         transform.TransformPopMatrix();
-        
     }
     glDisable(GL_DEPTH_TEST);
     // draw(color) = upload mVP (TransformGetModelViewProjectionMatrix)
-                // + upload PARTCOLOR (glUniform3fv, one colour per part)
-                // + glDrawElements (the ONE shared cube, 36 indices)
-    
+    // + upload PARTCOLOR (glUniform3fv, one colour per part)
+    // + glDrawElements (the ONE shared cube, 36 indices)
+
     glUseProgram(0);
 }
-
 
 // render fan ?? do i need this ??
 
@@ -351,34 +371,37 @@ void Fan::draw(glm::vec3 color)
     glm::mat4 mv = *transform.TransformGetModelViewMatrix();
     glm::mat3 normalMatrix = glm::inverse(glm::transpose(glm::mat3(mv)));
 
-    
-    //mvp *= *m_transform.TransformGetModelMatrix();
-    if(uMVP >= 0){
+    // mvp *= *m_transform.TransformGetModelMatrix();
+    if (uMVP >= 0)
+    {
         glUniformMatrix4fv(uMVP, 1, GL_FALSE, glm::value_ptr(mvp));
     }
-    
-    if(uNormalMatrix >=0){
+
+    if (uNormalMatrix >= 0)
+    {
         glUniformMatrix3fv(uNormalMatrix, 1, GL_FALSE, glm::value_ptr(normalMatrix));
     }
 
-    if(uMV >=0){
+    if (uMV >= 0)
+    {
         glUniformMatrix4fv(uMV, 1, GL_FALSE, glm::value_ptr(mv));
     }
 
-    if(uMatDiff >= 0){
-        //glUniform3fv(uPartColor, 1, glm::value_ptr(color));
+    if (uMatDiff >= 0)
+    {
+        // glUniform3fv(uPartColor, 1, glm::value_ptr(color));
         glUniform3fv(uMatDiff, 1, glm::value_ptr(color));
     }
-    
 
     glBindVertexArray(vao);
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, (void*)0);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, (void *)0);
     glBindVertexArray(0);
 }
 
 // TouchEventDown - pause / resume rotation (?)
 
-void Fan::TouchEventDown(float x, float y){
+void Fan::TouchEventDown(float x, float y)
+{
 
     // remember the position and reset movedDistance
     lastX = x;
@@ -387,11 +410,11 @@ void Fan::TouchEventDown(float x, float y){
     movedDistance = 0;
 
     lastMoveTime = std::chrono::steady_clock::now();
-
 }
 
-void Fan::TouchEventMove(float x, float y){
-    float dx = lastX -x;
+void Fan::TouchEventMove(float x, float y)
+{
+    float dx = lastX - x;
     float dy = lastY - y;
 
     lastX = x;
@@ -399,20 +422,60 @@ void Fan::TouchEventMove(float x, float y){
 
     movedDistance += hypot(dx, dy);
 
-    float dist = std::sqrt(dx*dx + dy*dy); // pixels this event
+    float dist = std::sqrt(dx * dx + dy * dy); // pixels this event
     std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
-    float dtMs =  std::chrono::duration<float>(currentTime - lastMoveTime).count();
+    float dtMs = std::chrono::duration<float>(currentTime - lastMoveTime).count();
     lastMoveTime = currentTime;
-    float velocity = dist /dtMs; // pixels per millisecond
+    float velocity = dist / dtMs; // pixels per millisecond
     // dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
 
-   // LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
+    // LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
 }
 
-void Fan::TouchEventRelease(float x, float y){
+void Fan::ToggleAllFalse()
+{
+    baseStatus = false;
+    poleStatus = false;
+    hubStatus = false;
+    for (int i = 0; i < 4; ++i)
+    {
+        bladesStatus[i] = false;
+    }
+}
+void Fan::ToggleBaseStatus()
+{
+    bool oldStatus = baseStatus;
+    ToggleAllFalse();
+    baseStatus = !oldStatus;
+    LOGI("Base: %s", baseStatus? "Selected" : "Unselected");
+}
+void Fan::TogglePoleStatus()
+{
+    bool oldStatus = poleStatus;
+    ToggleAllFalse();
+    poleStatus = !oldStatus;
+    LOGI("Pole: %s", poleStatus? "Selected" : "Unselected");
+}
+void Fan::ToggleHubStatus()
+{
+    bool oldStatus = hubStatus;
+    ToggleAllFalse();
+    hubStatus = !oldStatus;
+    LOGI("Hub: %s", hubStatus? "Selected" : "Unselected");
+}
+void Fan::ToggleBladesStatus(int index)
+{
+    bool oldStatus = bladesStatus[index];
+    ToggleAllFalse();
+    bladesStatus[index] = !oldStatus;
+    LOGI("Blade %d: %s", index, bladesStatus[index]? "Selected" : "Unselected");
+}
+
+void Fan::TouchEventRelease(float x, float y)
+{
     // if(movedDistance < kTapThreshold){
     //     fanOn = !fanOn;
     //     LOGI("Fan %s", fanOn ? "ON" : "OFF");
     // }
-    //dragBoost = 0;
+    // dragBoost = 0;
 }

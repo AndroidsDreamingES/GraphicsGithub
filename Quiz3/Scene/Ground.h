@@ -7,6 +7,9 @@
 #include "Transform.h"
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/glm.hpp>
+#ifdef PLATFORM_ANDROID
+#include <android/asset_manager.h>
+#endif
 
 class Ground : public Model
 {
@@ -39,5 +42,9 @@ public:
     float cameraDistance = 8.0f;
 
     float groundY = -3.6f;
+
+    #ifdef PLATFORM_ANDROID
+    AAssetManager* mgr = nullptr;
+    #endif
 
 };

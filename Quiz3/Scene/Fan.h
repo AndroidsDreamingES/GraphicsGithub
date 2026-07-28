@@ -52,10 +52,11 @@ std::chrono::steady_clock::time_point lastMoveTime{};
     const glm::mat4& GetHubWorldMatrix(){return hubWorldMatrix;};
     const glm::mat4& GetBladesWorldMatrix(int index){return bladesWorldMatrix[index];};
 
-    void ToggleBaseStatus(){baseStatus = !baseStatus;}
-    void TogglePoleStatus(){poleStatus = !poleStatus;}
-    void ToggleHubStatus(){hubStatus = !hubStatus;}
-    void ToggleBladesStatus(int index){bladesStatus[index] = !bladesStatus[index];}
+    void ToggleAllFalse();
+    void ToggleBaseStatus();
+    void TogglePoleStatus();
+    void ToggleHubStatus();
+    void ToggleBladesStatus(int index);
 
 private:
     void draw(glm::vec3 color);

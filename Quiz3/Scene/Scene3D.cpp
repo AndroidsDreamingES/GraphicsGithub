@@ -1,9 +1,12 @@
 #include "Scene3D.h"
 
 // it does the rendering n all now
-
-Scene3D::Scene3D(){
-
+#ifdef PLATFORM_ANDROID
+Scene3D::Scene3D(AAssetManager* assetMgr) : mgr(assetMgr)
+#else
+Scene3D::Scene3D()
+#endif
+{
 #ifdef PLATFORM_ANDROID 
     fan = new Fan(assetMgr);
     ground = new Ground(assetMgr);
@@ -83,7 +86,7 @@ bool Scene3D::hitsBlade(glm::mat4 const& worldMatrix, const glm::vec3& rayOrigin
 
 static const float BASE_PICK_RADIUS = 1.6f;
 
-static const float POLE_PICK_RADIUS = 0.25f;
+static const float POLE_PICK_RADIUS = 0.30f;
 static const float POLE_HALF_LENGTH = 2.53f;
 
 static const float HUB_PICK_RADIUS = 0.6f;
@@ -142,6 +145,8 @@ bool Scene3D::PickAt(float screenX, float screenY){
             fan->ToggleBladesStatus(bestBladeIndex);
             return true;
         default:
+            fan->ToggleAllFalse();
+            LOGI("Unselected all");
             return false; // missed everything
     }
 

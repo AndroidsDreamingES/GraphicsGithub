@@ -1,0 +1,48 @@
+ninja: Entering directory `D:\GraphicsGithub\Quiz3\android\app\.cxx\Debug\366f1u1e\x86_64'
+[1/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o
+In file included from D:/GraphicsGithub/Quiz3/Scene/Renderer.cpp:2:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Renderer.h:4:
+D:/GraphicsGithub/Quiz3/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[2/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o
+In file included from D:/GraphicsGithub/Quiz3/Scene/Scene3D.cpp:1:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Scene3D.h:8:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Fan.h:3:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Transform.h:41:
+D:/GraphicsGithub/Quiz3/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[3/5] Building CXX object CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o
+In file included from D:/GraphicsGithub/Quiz3/android/app/src/main/cpp/NativeTemplate.cpp:16:
+In file included from D:/GraphicsGithub/Quiz3/android/app/src/main/cpp/../../../../../Scene/Renderer.h:4:
+D:/GraphicsGithub/Quiz3/android/app/src/main/cpp/../../../../../Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+1 warning generated.
+[4/5] Building CXX object CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Ground.cpp.o
+In file included from D:/GraphicsGithub/Quiz3/Scene/Ground.cpp:1:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Ground.h:7:
+In file included from D:/GraphicsGithub/Quiz3/Scene/Transform.h:41:
+D:/GraphicsGithub/Quiz3/Scene/Platform.h:19:13: warning: 'PLATFORM_ANDROID' macro redefined [-Wmacro-redefined]
+   19 |     #define PLATFORM_ANDROID
+      |             ^
+<command line>:2:9: note: previous definition is here
+    2 | #define PLATFORM_ANDROID 1
+      |         ^
+D:/GraphicsGithub/Quiz3/Scene/Ground.cpp:107:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+  107 |     glm::perspective(glm::radians(60.0f), 1.0f, 0.01f, 100.0f);
+      |     ^~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[5/5] Linking CXX shared library D:\GraphicsGithub\Quiz3\android\app\build\intermediates\cxx\Debug\366f1u1e\obj\x86_64\libvertexarrayobject.so

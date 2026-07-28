@@ -1,0 +1,27 @@
+# ninja log v5
+19	173	8069545773871286	_deps/glm-build/glm/libglm.a	631453571f00875f
+23	1532	8069546891383933	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+37	2444	8069543529317812	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Transform.cpp.o	e36c6b02a3c140c0
+25	2846	8069543533309836	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Fan.cpp.o	66f5dd7510739516
+6	1404	8069548618913663	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+49	4161	8069543546320453	_deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.o	15f69d542878b30c
+8	2077	8069551883172519	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+19	2112	8069551883484451	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+42	2232	8069551884710923	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+17	3053	8069552539172351	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+49	3057	8069552539192334	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+65	3109	8069552539703905	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+9	2664	8069553019759482	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+39	2683	8069553019959216	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+55	2724	8069553020398754	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+10	2524	8069553464928211	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+41	2558	8069553465299505	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+27	2792	8069553467615978	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/SceneHUD.cpp.o	891c24f21049aae5
+27	2126	8069553651887402	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+11	2144	8069553652008194	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+39	2263	8069553653219850	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+27	2197	8069554001092802	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+40	2238	8069554001459578	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+11	2256	8069554001629376	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+56	2512	8069554004150411	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Ground.cpp.o	d710ad82c5ad06bc
+2513	2698	8069554005868286	D:/GraphicsGithub/Quiz3/android/app/build/intermediates/cxx/Debug/366f1u1e/obj/x86_64/libvertexarrayobject.so	40d31b27d7cb42c1

@@ -4,7 +4,62 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a86b23b-4391-4d10-a831-c76965a865eb" name="Changes" comment="" />
+    <list default="true" id="8a86b23b-4391-4d10-a831-c76965a865eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/Fan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/Fan.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/Fan.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/Fan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/Renderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/Scene3D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/Scene3D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/SceneHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/SceneHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/Scene/SceneHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/Scene/SceneHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdC/CompilerIdC.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdC/CompilerIdC.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdC/Debug/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdC/Debug/CMakeCCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdCXX/Debug/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/4.3.2/CompilerIdCXX/Debug/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/Debug/VertexArrayObject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/Debug/VertexArrayObject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/Debug/VertexArrayObject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/Debug/VertexArrayObject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Fan.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Fan.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Ground.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Ground.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Renderer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Renderer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Scene3D.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Scene3D.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/SceneHUD.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/SceneHUD.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Transform.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/Transform.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/VertexArrayObject.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/VertexArrayObject.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/VertexArrayObject.dir/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/lib/Debug/glewd.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/lib/Debug/glewd.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/lib/Debug/glewd.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/lib/Debug/glewd.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/libglew_static.dir/Debug/glew.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glew-build/libglew_static.dir/Debug/glew.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/Debug/glfw3.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/Debug/glfw3.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/Debug/glfw3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/Debug/glfw3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/context.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/context.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/egl_context.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/egl_context.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/init.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/init.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/input.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/input.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/monitor.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/monitor.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_init.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_init.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_joystick.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_joystick.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_monitor.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_monitor.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_window.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/null_window.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/osmesa_context.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/osmesa_context.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/platform.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/platform.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/vulkan.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/vulkan.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/wgl_context.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/wgl_context.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_init.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_init.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_joystick.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_joystick.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_module.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_module.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_monitor.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_monitor.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_thread.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_thread.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_time.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_time.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_window.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/win32_window.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/window.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glfw-build/src/glfw.dir/Debug/window.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/Debug/glm.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/Debug/glm.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/Debug/glm.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/Debug/glm.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/glm.dir/Debug/glm.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Quiz3/build_desktop/_deps/glm-build/glm/glm.dir/Debug/glm.obj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +68,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3H4OtSHoWQOtfkPBD3L0RRJYWiY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,12 +86,83 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="vertexarrayobject.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8a86b23b-4391-4d10-a831-c76965a865eb" name="Changes" comment="" />

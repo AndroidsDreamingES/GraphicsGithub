@@ -1,0 +1,21 @@
+# ninja log v5
+1	214	8069540914494946	glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	33fa5eb73aa3f7e6
+1	214	8069540914494946	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	33fa5eb73aa3f7e6
+215	16078	8069541073098172	glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	ffbf81e4b4a4ec7d
+215	16078	8069541073098172	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	ffbf81e4b4a4ec7d
+16078	18078	0	glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	68f047942beb9cf4
+16078	18078	0	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	68f047942beb9cf4
+18094	18168	8069541094037425	glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	1efa79dfba7a0b06
+18094	18168	8069541094037425	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	1efa79dfba7a0b06
+18168	18242	8069541094761267	glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	3249db2f59351637
+18168	18242	8069541094761267	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	3249db2f59351637
+18242	18324	8069541095594624	glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	8863cc55e88400e5
+18242	18324	8069541095594624	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	8863cc55e88400e5
+18325	18409	8069541096424278	glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	f4ae73a5b521e175
+18325	18409	8069541096424278	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	f4ae73a5b521e175
+18409	18494	8069541097306130	glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	451a535fd5c0de8c
+18409	18494	8069541097306130	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	451a535fd5c0de8c
+18495	18594	8069541098300496	CMakeFiles/glm-populate-complete	3990d1e318167b89
+18495	18594	8069541098300496	glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	3990d1e318167b89
+18495	18594	8069541098300496	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/CMakeFiles/glm-populate-complete	3990d1e318167b89
+18495	18594	8069541098300496	D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	3990d1e318167b89

@@ -1,0 +1,46 @@
+{
+  "buildFiles": [
+    "D:\\GraphicsGithub\\Quiz3\\android\\app\\.cxx\\Debug\\366f1u1e\\x86\\_deps\\glm-src\\CMakeLists.txt",
+    "D:\\GraphicsGithub\\Quiz3\\android\\app\\.cxx\\Debug\\366f1u1e\\x86\\_deps\\glm-src\\glm\\CMakeLists.txt",
+    "D:\\GraphicsGithub\\Quiz3\\android\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\AndroidStudio\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\GraphicsGithub\\Quiz3\\android\\app\\.cxx\\Debug\\366f1u1e\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\AndroidStudio\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\GraphicsGithub\\Quiz3\\android\\app\\.cxx\\Debug\\366f1u1e\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "glm::@ce54d98d7b326a3e12a8": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "glm",
+      "output": "D:\\GraphicsGithub\\Quiz3\\android\\app\\.cxx\\Debug\\366f1u1e\\x86\\_deps\\glm-build\\glm\\libglm.a"
+    },
+    "vertexarrayobject::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "vertexarrayobject",
+      "output": "D:\\GraphicsGithub\\Quiz3\\android\\app\\build\\intermediates\\cxx\\Debug\\366f1u1e\\obj\\x86\\libvertexarrayobject.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "D:\\AndroidStudio\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\AndroidStudio\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

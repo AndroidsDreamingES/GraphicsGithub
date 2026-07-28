@@ -10,6 +10,9 @@
 #include "Transform.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#ifdef PLATFORM_ANDROID
+#include <android/asset_manager.h>
+#endif
 
 class SceneHUD : public Model{
     public:
@@ -31,6 +34,13 @@ class SceneHUD : public Model{
 
     float CurrentSpeed() const {return speed;}
     float CurrentCamDist() const {return cameraDist;}
+    float ActiveButton() const {return activeButton;}
+
+    void IncreaseSpeed() {if(speed < 20){++speed;}}
+    void DecreaaseSpeed() {if(speed >0){--speed;}}
+
+    void ZoomIn(){if(cameraDist>3){--cameraDist;}}
+    void ZoomOut(){if(cameraDist<20){++cameraDist;}}
 
     GLuint program = 0;
     GLuint vao = 0;
@@ -58,4 +68,8 @@ class SceneHUD : public Model{
     void buildGeometry(int w, int h);
 
     bool pointInTriangle(float px, float py, const float* t);
+
+    #ifdef PLATFORM_ANDROID
+    AAssetManager* mgr = nullptr;
+    #endif
 };

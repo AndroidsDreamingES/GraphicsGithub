@@ -49,14 +49,37 @@ void Renderer::render()
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     //for (Model* m : models) m->Render();
+
+    if(scene3D && sceneHUD && sceneHUD->ActiveButton() >=0){
+        int button = sceneHUD->ActiveButton();
+        switch (button){
+            case 0:
+                sceneHUD->IncreaseSpeed();
+                scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());
+                break;
+            case 1:
+                sceneHUD->DecreaaseSpeed();
+                scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());
+                break;
+            case 2:
+                sceneHUD->ZoomIn();
+                scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
+                break;
+            case 3:
+                sceneHUD->ZoomOut();
+                scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
+        }
+            
+    }
+
     scene3D->Render();
     sceneHUD->Render();
 }
 
 void Renderer::TouchEventDown(float x, float y){
     if(sceneHUD && sceneHUD->TouchDown(x, y)){
-        scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());  
-        scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
+        // scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());  
+        // scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
     }
     else{
         scene3D->PickAt(x, y);

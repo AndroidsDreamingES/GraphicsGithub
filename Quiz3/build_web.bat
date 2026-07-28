@@ -20,6 +20,9 @@ emcc -std=c++17 ^
      Scene/Renderer.cpp ^
      Scene/Transform.cpp ^
      Scene/Fan.cpp ^
+     Scene/Ground.cpp ^
+     Scene/Scene3D.cpp ^
+     Scene/SceneHUD.cpp ^
      -IScene ^
      -Iexternal/glm ^
      -DUSE_GLFW ^
@@ -37,6 +40,9 @@ REM      Scene/main.cpp ^
 REM      Scene/Renderer.cpp ^
 REM      Scene/Transform.cpp ^
 REM      Scene/Fan.cpp ^
+REM      Scene/Ground.cpp^
+REM      Scene/Scene3D.cpp ^
+REM      Scene/SceneHUD.cpp ^
 REM      -IScene ^
 REM      -Iexternal/glm ^
 REM      -s USE_SDL=2 ^

@@ -104,7 +104,9 @@ Ground::Ground(){
     modelType = GridType;
     transform.TransformInit();
     // transform.TransformSetMatrixMode(PROJECTION_MATRIX);
-    glm::perspective(glm::radians(60.0f), 1.0f, 0.01f, 100.0f);
+    //glm::perspective(glm::radians(60.0f), 1.0f, 0.01f, 100.0f);
+    transform.TransformSetMatrixMode(PROJECTION_MATRIX);
+    transform.TransformSetPerspective(glm::radians(60.f), 1.0f, 0.01f, 1000.0f, 0.f);
 }
 
 Ground::~Ground(){
@@ -152,6 +154,7 @@ void Ground::BuildGround(){
 
 void Ground::InitModel(){
 
+    
     program = ShaderHelper::buildProgram(VS_GROUND, FS_GROUND);
 
     if(!program){

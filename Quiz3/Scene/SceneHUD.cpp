@@ -45,7 +45,7 @@ void main() {
 )GLSL";
 
 #ifdef PLATFORM_ANDROID
-SceneHUD::SceneHUD(AAssetManager* assetMgr) : mgr(assetMgr);
+SceneHUD::SceneHUD(AAssetManager* assetMgr) : mgr(assetMgr)
 #else
 SceneHUD::SceneHUD()
 #endif
@@ -294,32 +294,22 @@ bool SceneHUD::TouchDown(float x, float y){
             switch(i){
                 case 0:
                 buttonPressed = "+SPD";
-                if(speed < 20){
-                    ++speed;
-                }
-
+                IncreaseSpeed();
                 break;
                 
                 case 1:
                 buttonPressed = "-SPD";
-                if(speed > 0){
-                    --speed;
-                }
-
+                DecreaaseSpeed();
                 break;
 
                 case 2:
                 buttonPressed = "+ZOOM";
-                if(cameraDist > 3){
-                    --cameraDist;
-                }
+                ZoomIn();
                 break;
 
                 case 3:
                 buttonPressed = "-ZOOM";
-                if(cameraDist < 20){
-                    ++cameraDist;
-                }
+                ZoomOut();
             }
 
             LOGI("SceneHUD: %s pressed", buttonPressed.c_str());
