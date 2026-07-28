@@ -45,6 +45,12 @@ jobs:
       #   run: |
       #     sed 's/-s USE_WEBGL2=1 \\/-s USE_WEBGL2=1 \\\n    -s MIN_WEBGL_VERSION=2 \\/' build_web.sh | bash
 
+      - name: Build Assignment1
+        working-directory: Assignment1
+        run: |
+          bash build_web.sh
+          mkdir -p ../site/Assignment1
+          cp -r web/. ../site/Assignment1/
 
       - name: Build Quiz2
         working-directory: Quiz2
@@ -74,6 +80,10 @@ jobs:
           <body>
             <h1>OpenGL ES 3.0 Modern</h1>
             <p>An interactive WebGL demo that runs directly in your browser. No installation needed.</p>
+
+            <h2>Assignment 1 - Spinning Triangle</h2>
+            <p>Watch spinning shapes on your screen!</p>
+            <p><a href="Assignment1/">Launch the Assignment 1</a></p>
 
             <h2>Quiz 2 - Spinning Fan</h2>
             <p>Fan that spins when you swipe on it</p>
