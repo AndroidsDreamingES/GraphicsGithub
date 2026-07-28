@@ -81,8 +81,8 @@ jobs:
             <h1>OpenGL ES 3.0 Modern</h1>
             <p>An interactive WebGL demo that runs directly in your browser. No installation needed.</p>
 
-            <h2>Assignment 1 - Spinning Triangle</h2>
-            <p>Watch spinning shapes on your screen!</p>
+            <h2>Assignment 1 - Spinning Triangle + Yellow Rectangle</h2>
+            <p>Watch spinning rainbow triangle on your screen! (ft. yellow rectangle)</p>
             <p><a href="Assignment1/">Launch the Assignment 1</a></p>
 
             <h2>Quiz 2 - Spinning Fan</h2>
