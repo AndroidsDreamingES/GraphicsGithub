@@ -53,6 +53,15 @@ jobs:
           mkdir -p ../site/Quiz2
           cp -r web/. ../site/Quiz2/
 
+
+      - name: Build Quiz3
+        working-directory: Quiz3
+        run: |
+          bash build_web.sh
+          mkdir -p ../site/Quiz3
+          cp -r web/. ../site/Quiz3/ 
+
+
       - name: Generate index.html
         run: |
           cat > site/index.html << 'HTML'
@@ -68,7 +77,11 @@ jobs:
 
             <h2>Quiz 2 - Spinning Fan</h2>
             <p>Fan that spins when you swipe on it</p>
-            <p><a href="Quiz2/">Launch the assignment</a></p>
+            <p><a href="Quiz2/">Launch the Quiz 2</a></p>
+
+            <h2>Quiz 3 - Spinning Fan with HUD</h2>
+            <p>Adjust fan speed and camera zoom with HUD buttons</p>
+            <p><a href="Quiz3/">Launch the Quiz 3</a></p>
 
             <p style="color: white;">According to all known laws of aviation, there is no way a bee should be able to fly.</p>
             <p style="color: white;">Its wings are too small to get its fat little body off the ground.</p>
