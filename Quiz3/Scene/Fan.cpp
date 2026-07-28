@@ -399,17 +399,7 @@ void Fan::draw(glm::vec3 color)
 
 // TouchEventDown - pause / resume rotation (?)
 
-void Fan::TouchEventDown(float x, float y)
-{
-
-    // remember the position and reset movedDistance
-    lastX = x;
-    lastY = y;
-
-    movedDistance = 0;
-
-    lastMoveTime = std::chrono::steady_clock::now();
-}
+void Fan::TouchEventDown(float x, float y){}
 
 void Fan::TouchEventMove(float x, float y){}
 
