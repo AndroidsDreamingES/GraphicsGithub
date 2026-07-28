@@ -1,0 +1,11 @@
+# ninja log v5
+16	4460	8069638982493962	CMakeFiles/vertexarrayobject.dir/NativeTemplate.cpp.o	787fc28996fc3554
+1	4576	8069638983311030	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Renderer.cpp.o	185280ebb1417978
+37	4685	8069638985360700	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Scene3D.cpp.o	90d3d7799a2baff7
+27	4738	8069638985731532	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Transform.cpp.o	e36c6b02a3c140c0
+61	5154	8069638990131142	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/SceneHUD.cpp.o	891c24f21049aae5
+74	5293	8069638991404217	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Ground.cpp.o	d710ad82c5ad06bc
+49	5806	8069638996477835	CMakeFiles/vertexarrayobject.dir/D_/GraphicsGithub/Quiz3/Scene/Fan.cpp.o	66f5dd7510739516
+89	9671	8069639034956106	_deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.o	15f69d542878b30c
+9673	9865	8069639037001254	_deps/glm-build/glm/libglm.a	631453571f00875f
+9866	10051	8069639039135715	D:/GraphicsGithub/Quiz3/android/app/build/intermediates/cxx/Debug/366f1u1e/obj/x86_64/libvertexarrayobject.so	40d31b27d7cb42c1

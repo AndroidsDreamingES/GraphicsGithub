@@ -1,0 +1,118 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "_deps/glm-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-_deps.glm-build-Debug-7f2f2138a6c5167608c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-src"
+				},
+				{
+					"build" : "_deps/glm-build/glm",
+					"jsonFile" : "directory-_deps.glm-build.glm-Debug-9f6e48ef7c4a8143d83c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86/_deps/glm-src/glm",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vertexarrayobject",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "glm::@ce54d98d7b326a3e12a8",
+					"jsonFile" : "target-glm-Debug-11d8ce236001d1d3c50f.json",
+					"name" : "glm",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vertexarrayobject::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vertexarrayobject-Debug-4af6c39170989eb40b60.json",
+					"name" : "vertexarrayobject",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/GraphicsGithub/Quiz3/android/app/.cxx/Debug/366f1u1e/x86",
+		"source" : "D:/GraphicsGithub/Quiz3/android/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
