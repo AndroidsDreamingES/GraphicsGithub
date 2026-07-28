@@ -38,7 +38,6 @@ void Renderer::resize(int w, int h)
 {
     screenWidth = w; screenHeight = h;
     glViewport(0, 0, w, h);
-    // for (Model* m : models) m->Resize(w, h);
     scene3D->Resize(w, h);
     sceneHUD->Resize(w, h);
     LOGI("Renderer::resize %d x %d", w, h);
@@ -78,16 +77,14 @@ void Renderer::render()
 
 void Renderer::TouchEventDown(float x, float y){
     if(sceneHUD && sceneHUD->TouchDown(x, y)){
-        // scene3D->SetFanSpeed(sceneHUD->CurrentSpeed());  
-        // scene3D->SetCameraDistance(sceneHUD->CurrentCamDist());
     }
     else{
         scene3D->PickAt(x, y);
     } 
 }
 
-void Renderer::TouchEventMove(float x, float y)    { }//for (Model* m : models) m->TouchEventMove(x,y); }
+void Renderer::TouchEventMove(float x, float y)    { }
 
 void Renderer::TouchEventRelease(float x, float y) { 
     if(sceneHUD) sceneHUD->TouchRelease();
-}//for (Model* m : models) m->TouchEventRelease(x,y); }
+}

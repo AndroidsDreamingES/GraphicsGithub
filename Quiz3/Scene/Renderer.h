@@ -40,7 +40,6 @@ private:
     AAssetManager* assetMgr = nullptr;
 #endif
 
-    // std::vector<Model*> models;
     Scene3D* scene3D;
     SceneHUD* sceneHUD;
     int screenWidth  = 0;

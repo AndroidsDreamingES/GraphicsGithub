@@ -59,7 +59,7 @@ class SceneHUD : public Model{
     float buttons[4][12] = {};
     float indicatorHUD[20][12] = {};
 
-    float speed = 8.0f; // 0..20 (??) maybe the range oh yep
+    float speed = 8.0f; // 0..20 (range)
     float cameraDist = 8.0f;
     int activeButton = -1; // which button (if any) is held
 

@@ -361,11 +361,10 @@ void Fan::Render()
     glUseProgram(0);
 }
 
-// render fan ?? do i need this ??
 
 void Fan::draw(glm::vec3 color)
 {
-    // ????
+    
     glm::mat4 mvp = *transform.TransformGetModelViewProjectionMatrix();
 
     glm::mat4 mv = *transform.TransformGetModelViewMatrix();
@@ -412,25 +411,7 @@ void Fan::TouchEventDown(float x, float y)
     lastMoveTime = std::chrono::steady_clock::now();
 }
 
-void Fan::TouchEventMove(float x, float y)
-{
-    float dx = lastX - x;
-    float dy = lastY - y;
-
-    lastX = x;
-    lastY = y;
-
-    movedDistance += hypot(dx, dy);
-
-    float dist = std::sqrt(dx * dx + dy * dy); // pixels this event
-    std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
-    float dtMs = std::chrono::duration<float>(currentTime - lastMoveTime).count();
-    lastMoveTime = currentTime;
-    float velocity = dist / dtMs; // pixels per millisecond
-    // dragBoost = std::min(velocity * kBoostScale, kMaxBoost);
-
-    // LOGI("Fan: drag velocity %.2f px/ms -> boost %.2f deg/frame", velocity, dragBoost);
-}
+void Fan::TouchEventMove(float x, float y){}
 
 void Fan::ToggleAllFalse()
 {
@@ -471,11 +452,4 @@ void Fan::ToggleBladesStatus(int index)
     LOGI("Blade %d: %s", index, bladesStatus[index]? "Selected" : "Unselected");
 }
 
-void Fan::TouchEventRelease(float x, float y)
-{
-    // if(movedDistance < kTapThreshold){
-    //     fanOn = !fanOn;
-    //     LOGI("Fan %s", fanOn ? "ON" : "OFF");
-    // }
-    // dragBoost = 0;
-}
+void Fan::TouchEventRelease(float x, float y){}

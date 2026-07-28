@@ -1,4 +1,4 @@
-// Scene/Scene3D.h - owns your android programming quiz 2 fan plus the new Ground
+// Scene/Scene3D.h - owns android programming quiz 2 fan plus the new Ground
 // forwards resize() to both, applies the shared Phong light + adjusteable camera distance
 // before drawing either one, and owns PickAt
 
