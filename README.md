@@ -1,3 +1,7 @@
+# Assignments for Computer Graphics Module
+This contains various implementations of OpenGL projects all working on 3 different platforms: Desktop, Android and Web
+
+You can view the projects at: https://androidsdreaminges.github.io/GraphicsGithub/
 
 ##### Android App:
 To build the android app:
